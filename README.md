@@ -1,25 +1,22 @@
 # The 811 System Design Principle
-The **811 Principle** is a design philosophy for creating systems that are simple, flexible, and extensible. It balances minimalism, composability, and escape hatches to effectively address both common and edge use cases.
+The **811 Principle** is a system design philosophy and decision-making framework. It helps you resolve design trade-offs by prioritizing **flexibility first**, then balancing between **simplicity for most**, **composability for some**, and **full control for edge cases**.
 
 ## Steps to Apply
-
-### 1. Design for 80% Minimal Convenience
+### 1. 100% Flexibility is Priority
+- The system must be inherently open-ended.
+- No layer should impose irreversible limits.
+### 2. Design for 80% Minimal Convenience
 - Identify common, frequent use cases.
 - Provide simple defaults and presets for them.
 - Hide unnecessary choices from novice users.
 
-### 2. Enable 10% Advanced Composition
+### 3. Enable 10% Advanced Composition
 - Offer modular components or chaining APIs.
 - Allow recomposition, logic reuse, and variation.
 
-### 3. Provide 10% Escape Hatch
+### 4. Provide 10% Escape Hatch
 - Allow full access to low-level internals or scripting.
 - Let power users override defaults when necessary.
-
-### 4. Validate the Balance
-- Test both novice and expert flows.
-- Iterate with feedback on friction points.
-
 
 ## Structure
 
